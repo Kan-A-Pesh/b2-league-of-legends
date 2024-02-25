@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>League of Legends</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+        <link rel="stylesheet" href="./style.css" />
+
+        <script src="./js/navbar.js" defer></script>
+        <script src="./js/index.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><strong>LoL</strong></li>
+            </ul>
+            <ul>
+                <li class="hide-connected"><a href="./login.html">Login</a></li>
+                <li class="hide-connected"><a href="./register.html">Register</a></li>
+                <li id="profile" class="hide-anon">Connected as ...</li>
+                <li class="hide-anon"><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </nav>
+        <main class="container">
+            <h1>Welcome to summoner's rift</h1>
+            <div class="grid" id="champions">
+                <!-- "champion" template -->
+                <div class="card">
+                    <input type="hidden" name="id" value="ID" />
+                    <div class="details">
+                        <input type="text" name="name" value="Name" class="h2" />
+                        <input type="text" name="role" value="Role" class="pico" />
+                    </div>
+                    <div class="actions">
+                        <button class="primary" name="edit">Edit</button>
+                        <button class="secondary" name="delete">Delete</button>
+                    </div>
+                </div>
+                <!-- "champion" template -->
+            </div>
+        </main>
+    </body>
+</html>

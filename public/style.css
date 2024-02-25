@@ -1,0 +1,28 @@
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #0005;
+    padding: 0 64px;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+main.container {
+    margin-top: 96px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, calc(100vw - 64px)), 1fr));
+    gap: 32px;
+}
+
+.card {
+    border-radius: 8px;
+    border: 1px solid #fff3;
+    overflow: hidden;
+    padding: 16px;
+}
